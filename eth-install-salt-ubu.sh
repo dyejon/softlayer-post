@@ -13,6 +13,6 @@ echo 'deb http://repo.saltstack.com/apt/ubuntu/ubuntu14/latest trusty main' | te
 apt-get update
 apt-get install -y salt-minion
 stop salt-minion
-echo "master: 10.121.145.125" | tee /etc/salt/minion.d/master.conf
+echo "master: 10.121.145.115" | tee /etc/salt/minion.d/master.conf
 rm -rf /etc/salt/pki/minion 
 start salt-minion
