@@ -8,7 +8,7 @@ set -x
 
 apt-get update
 apt-get install -y wget
-wget -O - https://repo.saltstack.com/apt/ubuntu/ubuntu14/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
+wget -O - https://repo.saltstack.com/apt/ubuntu/ubuntu14/latest/SALTSTACK-GPG-KEY.pub | apt-key add -
 echo 'deb http://repo.saltstack.com/apt/ubuntu/ubuntu14/latest trusty main' | tee /etc/apt/sources.list.d/saltstack.list
 apt-get update
 apt-get install -y salt-minion
