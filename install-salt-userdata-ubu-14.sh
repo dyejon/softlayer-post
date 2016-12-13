@@ -29,7 +29,7 @@ if [ -z "$SALT_MASTER" ]; then
   exit 1
 fi
 
-systemctl stop salt-minion
+stop salt-minion
 echo "master: ${SALT_MASTER}" >/etc/salt/minion.d/master.conf
 rm -rf /etc/salt/pki/minion 
-systemctl start salt-minion
+start salt-minion
